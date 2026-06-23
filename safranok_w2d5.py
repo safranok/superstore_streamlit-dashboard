@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-df = pd.read_csv(r'Streamlit_dashboard/cleaned_superstore.csv')
+df = pd.read_csv(r"cleaned_superstore.csv")
 df['order_date'] = pd.to_datetime(df['order_date'])
 
 with st.sidebar:
